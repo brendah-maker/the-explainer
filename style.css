@@ -9,25 +9,25 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #FF0000; /* red page background */
+  background-color: #FFFFFF; /* white background */
   color: #000000;            /* black text */
   line-height: 1.6;
 }
 
 /* ======================== */
-/* TOP EXPLAINER SECTION    */
+/* HEADER                   */
 /* ======================== */
-header.explainer {
-  background-color: #FFFFFF; /* white background */
-  color: #FF0000;            /* red text */
+header {
+  background-color: #FF0000; /* red header */
+  color: #FFFFFF;
   padding: 20px 15px;
   text-align: center;
 }
 
-header.explainer h1 {
+header h1 {
+  margin-bottom: 15px;
   font-size: 2rem;
-  margin-bottom: 10px;
-  color: #FF0000; /* red heading */
+  color: #FFFFFF;
 }
 
 /* ======================== */
@@ -42,14 +42,14 @@ nav ul {
 }
 
 nav a {
-  color: #000000; /* black text by default */
+  color: #FF0000; /* red links */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #FFFFFF; /* white text on hover */
+  color: #000000; /* black on hover */
 }
 
 /* ======================== */
@@ -71,7 +71,7 @@ nav a:hover {
 /* ARTICLES                  */
 /* ======================== */
 .article-card {
-  background-color: #FFFFFF; /* white cards for readability */
+  background-color: #FFFFFF; /* white card */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -91,13 +91,12 @@ nav a:hover {
 }
 
 .article-card h3 a {
-  color: #000000; /* black links */
+  color: #FF0000; /* red links */
   text-decoration: none;
-  transition: color 0.3s;
 }
 
 .article-card h3 a:hover {
-  color: #FFFFFF; /* white on hover */
+  color: #000000; /* black hover */
 }
 
 .article-card p {
@@ -116,7 +115,7 @@ nav a:hover {
 
 .sidebar h3 {
   margin-bottom: 15px;
-  color: #000000;
+  color: #000000; /* black headings */
 }
 
 .trending li {
@@ -125,12 +124,12 @@ nav a:hover {
 
 .trending a {
   text-decoration: none;
-  color: #000000;
+  color: #FF0000; /* red links */
   transition: color 0.3s;
 }
 
 .trending a:hover {
-  color: #FFFFFF;
+  color: #000000; /* black on hover */
 }
 
 /* ======================== */
@@ -138,7 +137,7 @@ nav a:hover {
 /* ======================== */
 footer {
   background-color: #FF0000; /* red footer */
-  color: #FFFFFF;            /* white text in footer */
+  color: #FFFFFF;
   text-align: center;
   padding: 25px 15px;
   margin-top: 40px;
@@ -153,9 +152,4 @@ footer {
   padding: 15px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
-}
-
-.info-box:hover {
-  color: #FFFFFF; /* text turns white on hover if needed */
-  background-color: #FF0000; /* optional hover effect */
 }
