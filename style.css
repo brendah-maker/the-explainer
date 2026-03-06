@@ -9,25 +9,25 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #FFFFFF; /* white background */
+  background-color: #FFFFFF; /* body remains white */
   color: #000000;            /* black text */
   line-height: 1.6;
 }
 
 /* ======================== */
-/* HEADER                   */
+/* TOP EXPLAINER SECTION    */
 /* ======================== */
-header {
-  background-color: #FF0000; /* red header */
-  color: #FFFFFF;
+header.explainer {
+  background-color: #FFFFFF; /* white background */
+  color: #FF0000;            /* red text */
   padding: 20px 15px;
   text-align: center;
 }
 
-header h1 {
-  margin-bottom: 15px;
+header.explainer h1 {
   font-size: 2rem;
-  color: #FFFFFF;
+  margin-bottom: 10px;
+  color: #FF0000; /* red heading */
 }
 
 /* ======================== */
@@ -42,14 +42,14 @@ nav ul {
 }
 
 nav a {
-  color: #FF0000; /* red links */
+  color: #000000; /* black links */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #000000; /* black on hover */
+  color: #FFFFFF; /* white on hover */
 }
 
 /* ======================== */
@@ -71,12 +71,12 @@ nav a:hover {
 /* ARTICLES                  */
 /* ======================== */
 .article-card {
-  background-color: #FFFFFF; /* white card */
+  background-color: #FF0000; /* red cards for contrast */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, color 0.3s;
+  color: #000000; /* black text */
 }
 
 .article-card img {
@@ -91,12 +91,12 @@ nav a:hover {
 }
 
 .article-card h3 a {
-  color: #FF0000; /* red links */
+  color: #000000; /* black links */
   text-decoration: none;
 }
 
 .article-card h3 a:hover {
-  color: #000000; /* black hover */
+  color: #FFFFFF; /* white on hover */
 }
 
 .article-card p {
@@ -107,15 +107,15 @@ nav a:hover {
 /* SIDEBAR                   */
 /* ======================== */
 .sidebar {
-  background-color: #FFFFFF; /* white sidebar */
+  background-color: #FF0000; /* red sidebar */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  color: #000000; /* black text */
 }
 
 .sidebar h3 {
   margin-bottom: 15px;
-  color: #000000; /* black headings */
+  color: #000000;
 }
 
 .trending li {
@@ -124,12 +124,12 @@ nav a:hover {
 
 .trending a {
   text-decoration: none;
-  color: #FF0000; /* red links */
+  color: #000000;
   transition: color 0.3s;
 }
 
 .trending a:hover {
-  color: #000000; /* black on hover */
+  color: #FFFFFF;
 }
 
 /* ======================== */
@@ -137,7 +137,7 @@ nav a:hover {
 /* ======================== */
 footer {
   background-color: #FF0000; /* red footer */
-  color: #FFFFFF;
+  color: #FFFFFF;            /* white text */
   text-align: center;
   padding: 25px 15px;
   margin-top: 40px;
@@ -152,4 +152,9 @@ footer {
   padding: 15px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+.info-box:hover {
+  color: #FFFFFF;
+  background-color: #FF0000; /* hover effect */
 }
