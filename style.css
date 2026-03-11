@@ -131,7 +131,7 @@ nav a:hover{
 .article-card img,
 .article-article img{
   width:100%;
-  max-width:300px;
+  max-width:600px;
   height:auto;
   display:block;
   margin:20px auto;
