@@ -79,9 +79,10 @@ nav a:hover {
   flex: 1; /* pushes footer down */
 }
 
+/* Grid layout for cards (4 per row on desktop) */
 .grid, .main-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -93,7 +94,7 @@ nav a:hover {
 .calc-card,
 .sidebar {
   background: #FFFFFF;
-  padding: 18px;
+  padding: 16px;
   border-radius: 8px;
   margin-bottom: 18px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.06);
@@ -143,10 +144,10 @@ nav a:hover {
 .blog-article img,
 .calc-card img {
   width: 90%;
-  max-width: 400px;
+  max-width: 300px; /* smaller images for 4 cards */
   height: auto;
   display: block;
-  margin: 15px auto;
+  margin: 10px auto;
   border-radius: 6px;
 }
 
@@ -229,7 +230,7 @@ footer a:hover {
 /* ======================== */
 @media (max-width: 1024px){
   .grid, .main-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablet */
   }
 }
 
@@ -240,6 +241,9 @@ footer a:hover {
   nav ul {
     flex-direction: column;
     gap: 10px;
+  }
+  .grid, .main-grid {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
   }
   .article-card,
   .info-card,
