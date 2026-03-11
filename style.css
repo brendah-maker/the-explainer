@@ -127,11 +127,11 @@ nav a:hover{
   margin-bottom:10px;
 }
 
-/* Article Images */
+/* Article Images /
 .article-card img,
 .article-article img{
   width:100%;
-  max-width:500px;
+  max-width:300px;
   height:auto;
   display:block;
   margin:20px auto;
