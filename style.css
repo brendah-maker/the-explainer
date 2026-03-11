@@ -18,7 +18,7 @@ body{
   color:#000000;
   line-height:1.7;
 
-  /* for sticky footer */
+  /* sticky footer */
   min-height:100vh;
   display:flex;
   flex-direction:column;
@@ -27,8 +27,6 @@ body{
 /* ======================== */
 /* HEADER                   */
 /* ======================== */
-
-/* Logo Area */
 header{
   background:#FFFFFF;
   padding:20px 10px;
@@ -46,7 +44,6 @@ header h1{
 /* ======================== */
 /* NAVIGATION BAR           */
 /* ======================== */
-
 nav{
   background:#FF0000;
   padding:12px 0;
@@ -77,7 +74,6 @@ nav a:hover{
 /* ======================== */
 /* MAIN CONTAINER           */
 /* ======================== */
-
 .container{
   max-width:1200px;
   margin:40px auto;
@@ -96,7 +92,6 @@ nav a:hover{
 /* ======================== */
 /* ARTICLE CARDS            */
 /* ======================== */
-
 .article-card{
   background:#FFFFFF;
   padding:25px;
@@ -129,12 +124,23 @@ nav a:hover{
 .article-card p{
   font-size:0.95rem;
   color:#333;
+  margin-bottom:10px;
+}
+
+/* Article Images */
+.article-card img,
+.article-article img{
+  width:100%;
+  max-width:500px;
+  height:auto;
+  display:block;
+  margin:20px auto;
+  border-radius:8px;
 }
 
 /* ======================== */
 /* SIDEBAR                  */
 /* ======================== */
-
 .sidebar{
   background:#FFFFFF;
   padding:25px;
@@ -170,7 +176,6 @@ nav a:hover{
 /* ======================== */
 /* INFO BOXES               */
 /* ======================== */
-
 .info-box{
   background:#FFFFFF;
   border-left:5px solid #FF0000;
@@ -182,7 +187,6 @@ nav a:hover{
 /* ======================== */
 /* FOOTER (STICKY)          */
 /* ======================== */
-
 footer{
   background:#FF0000;
   color:#FFFFFF;
@@ -193,10 +197,13 @@ footer{
 footer ul{
   list-style:none;
   margin-bottom:10px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
 }
 
 footer li{
-  margin:6px 0;
+  margin:0;
 }
 
 footer a{
@@ -207,4 +214,33 @@ footer a{
 
 footer a:hover{
   text-decoration:underline;
+}
+
+/* ======================== */
+/* RESPONSIVE DESIGN        */
+/* ======================== */
+@media (max-width:1024px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:768px){
+  header h1{
+    font-size:1.8rem;
+  }
+  nav ul{
+    flex-direction:column;
+    gap:12px;
+  }
+  .article-card{
+    padding:20px;
+  }
+  .sidebar{
+    padding:20px;
+  }
+  .container{
+    margin:20px auto;
+    padding:0 15px;
+  }
 }
