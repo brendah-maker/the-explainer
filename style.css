@@ -374,3 +374,40 @@ grid-template-columns:1fr;
 }
 
 }
+
+
+.blog-article{
+max-width:750px;
+margin:auto;
+}
+
+.blog-article h1{
+margin-bottom:10px;
+}
+
+.article-meta{
+color:#777;
+font-size:0.9rem;
+margin-bottom:15px;
+}
+
+.article-category{
+color:#FF0000;
+font-weight:600;
+margin-bottom:5px;
+}
+
+.blog-article img{
+width:100%;
+border-radius:8px;
+margin:20px 0;
+}
+
+.blog-article h2{
+margin-top:25px;
+margin-bottom:10px;
+}
+
+.back-link{
+margin-top:30px;
+}
