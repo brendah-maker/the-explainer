@@ -19,4 +19,16 @@
     <priority>0.7</priority>
   </url>
 
+    <url>
+    <loc>https://www.theexplainer.co.ke/explainer/how-paye-is-calculated-in-kenya.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+    <url>
+    <loc>https://www.theexplainer.co.ke/explainer/how-fuel-prices-are-determined-in-kenya.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  
 </urlset>
